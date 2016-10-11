@@ -26,7 +26,7 @@ return [
 	|
 	*/
 
-	'url' => 'http://localhost',
+	'url' => 'http://www.bes_project.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -39,7 +39,7 @@ return [
 	|
 	*/
 
-	'timezone' => 'UTC',
+	'timezone' => 'Asia/Shanghai',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
 	|
 	*/
 
-	'key' => env('APP_KEY', 'SomeRandomString'),
+	'key' => env('APP_KEY', 'E3FvFxStha3ijZgUikTdXIvpvaULAno2'),
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 

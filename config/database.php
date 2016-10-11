@@ -54,10 +54,10 @@ return [
 
 		'mysql' => [
 			'driver'    => 'mysql',
-			'host'      => env('DB_HOST', 'localhost'),
-			'database'  => env('DB_DATABASE', 'forge'),
-			'username'  => env('DB_USERNAME', 'forge'),
-			'password'  => env('DB_PASSWORD', ''),
+			'host'      => env('DB_HOST', 'rm-bp161jfen84tpr7d2o.mysql.rds.aliyuncs.com'),
+			'database'  => env('DB_DATABASE', 'huihe_marketing_system'),
+			'username'  => env('DB_USERNAME', 'huihex'),
+			'password'  => env('DB_PASSWORD', 'koolma2010'),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
