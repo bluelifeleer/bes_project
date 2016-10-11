@@ -2,6 +2,10 @@
 namespace App\Http\Controllers;
 
 class CreativesController extends Controller {
+	#ip:114.55.113.231
+	#dsp:18010532
+	#token:c1cab1eb74dd83561cc042cd713b24d9
+
 	/**
 	 * Create a new controller instance.
 	 *
@@ -38,7 +42,8 @@ class CreativesController extends Controller {
 	 * @date 2016-10-11
 	 */
 	public function get($ids) {
-		return 'get';
+		// return 'get';
+		return $ids;
 	}
 
 	/**

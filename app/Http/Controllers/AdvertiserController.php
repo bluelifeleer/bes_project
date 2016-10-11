@@ -36,7 +36,7 @@ class AdvertiserController extends Controller {
 	 * @author junmei <thebulelife@outlook.com>
 	 * @date 2016-10-11
 	 */
-	public function get($ids = array()) {
+	public function get($ids) {
 		return 'get';
 	}
 	/**
@@ -59,7 +59,7 @@ class AdvertiserController extends Controller {
 	 * @author junmei <thebulelife@outlook.com>
 	 * @date 2016-10-11
 	 */
-	public function queryQualification($ids = array()) {
+	public function queryQualification($ids) {
 		return 'queryQualification';
 	}
 }
