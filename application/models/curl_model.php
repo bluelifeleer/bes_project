@@ -10,7 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 |*/
 
-class curl_model extends CI_Model {
+class Curl_model extends CI_Model {
 	private $curl;
 	private $request;
 	private $http;

@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |	Date 2016-10-12
 |
 |*/
-class api_model extends CI_Model {
+class Api_model extends CI_Model {
 	private $bes_conf;
 	public function __construct() {
 		parent::__construct();
