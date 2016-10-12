@@ -10,23 +10,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 |*/
 class Users extends CI_Controller {
+
 	public function __construct() {
 		parent::__construct();
-		// $this->config->load('bes_config');
+		$this->load->model('Users_model', 'um');
+	}
+
+	public function test() {
+		$this->checkPassword('test伊家的铺子', 'serfgsdrvserv');
 	}
 
 	public function login() {
-		echo 'login';
-		$bes_config = $this->config->item('bes_api');
-		var_dump($bes_config);
-		// $this->load->view();
+		$this->load->view('users/login.html');
 	}
 
 	public function register() {
-		$this->load->view();
+		$this->load->view('users/register.html');
 	}
 
-	private function checkPassword() {
-
+	private function checkPassword($name, $password) {
+		$aaa = $this->um->get($name, $password);
+		var_dump($aaa);
 	}
 }

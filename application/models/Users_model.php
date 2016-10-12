@@ -2,20 +2,22 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 /*
 |-----------------------------------------------------------
-| Home Controller
+| Users Model
 |-----------------------------------------------------------
 |	Author bulelife
 |	Email thebulelife@outlook.com
 |	Date 2016-10-12
 |
 |*/
-class Home extends CI_Controller {
+class Users_model extends CI_Model {
 	public function __construct() {
 		parent::__construct();
 	}
 
-	public function index() {
-		// var_dump(password('12312312', $this->config->item('encrypt')));
-		$this->load->view('home/index.html');
+	public function get($name) {
+		$respose = $this->db->select(' * FROM (SELECT * FROM user WHERE username="' . $name . '") AS u', false)->join('store AS st', 'st.own_id=u.uid', 'inner')->group_by('uid')->get();
+		$str = $this->db->last_query();
+		var_dump($str);
+		return $respose;
 	}
 }

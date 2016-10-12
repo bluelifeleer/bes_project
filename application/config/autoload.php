@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
  */
-$autoload['libraries'] = array();
+$autoload['libraries'] = array('database', 'session', 'email');
 
 /*
 | -------------------------------------------------------------------
@@ -89,7 +89,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
  */
-$autoload['helper'] = array();
+$autoload['helper'] = array('function');
 
 /*
 | -------------------------------------------------------------------
@@ -103,7 +103,7 @@ $autoload['helper'] = array();
 | config files.  Otherwise, leave it blank.
 |
  */
-$autoload['config'] = array();
+$autoload['config'] = array('bes_config', 'encrypt');
 
 /*
 | -------------------------------------------------------------------
@@ -133,16 +133,3 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
  */
 $autoload['model'] = array();
-
-/*
-|--------------------------------------------------------------------
-|	Auto-load bes_config
-|--------------------------------------------------------------------
-|	author bulelife
-|	email thebulelife@outlook.com
-|	date 2016-10-12
-|
-|
-|
- */
-$autoload['config'] = array('bes_config');
